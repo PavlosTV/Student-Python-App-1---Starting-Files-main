@@ -16,6 +16,11 @@ def group(pohlavi):
         elif pohlavi =="jiné":
                 return "ahoj"
         
+def play_music():
+        pygame.mixer.music.play()
+        
+def stop_music():
+        pygame.mixer.music.stop()
 
                 
 # Main Window Variables

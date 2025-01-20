@@ -3,8 +3,12 @@ import datetime as dt
 from datetime import date, datetime, timedelta
 import os
 import sys
+import pygame
+
 
 ### Program configuration
+# Initialize Pygame mixer
+pygame.mixer.init()
 
 ## Working directory configuration
 """
@@ -22,6 +26,8 @@ print(f"Current working directory is: {os.getcwd()}")
 
 
 ## A Music file configuration
-
+# Load the music file (Replace with your music path)
+music_path = "resources/vaclavek_audio.mp3" # Update with your actual music location
+pygame.mixer.music.load(music_path)
 
 ## Google Sheets database configuration
